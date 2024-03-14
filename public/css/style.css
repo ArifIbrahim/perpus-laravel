@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.font-tektur{
+    font-family: 'Tektur', sans-serif;
+}
+
+.font-garamond{
+    font-family: 'EB Garamond', serif;
+}
+
+.font-bunge{
+    font-family: 'Bungee', sans-serif;
+}
+
+.h-9v{
+    height: 80vh;
+}
+
+
+.buku {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 50px 50px 50px;
+    gap: 50px;
+    cursor: pointer;
+}
+
+.card{
+    position: relative;
+    width: 270px;
+    background-color: black;
+    border-radius: 15px
+}
+
+.image {
+    display: block;
+    width: 270px;
+    height: 400px;
+    transition: .5s ease;
+    border-radius: 15px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    height: auto;
+    width: 270px;
+    opacity: 0;
+    transition: .5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card:hover .image {
+    opacity: 0.5;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.judul{
+    color: white;
+    font-family: 'Tilt Prism', sans-serif;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (max-width:400px) {
+    .hero{
+        padding-left: 10px;
+    }
+}
